@@ -23,7 +23,6 @@ class CalculadoraHija(calcoo.Calculadora):
 
 
 if __name__ == "__main__":
-    calc.capture_argv_error()
     op1, operation, op2 = calc.take_args()
     calc = CalculadoraHija()
     print(calcoo.do_operation(calc, operation, op1, op2))
